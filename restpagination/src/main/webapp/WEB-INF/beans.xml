@@ -12,7 +12,7 @@
 	
 	<context:component-scan base-package="com.on.java.shafique"/>
 	
-	<jaxrs:server id="srvc" address="/">
+	<jaxrs:server id="srvc" address="/ps">
 	  <jaxrs:serviceBeans>
 	    <ref bean="paginationServiceImpl"/>
 	  </jaxrs:serviceBeans>

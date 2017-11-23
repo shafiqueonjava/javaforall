@@ -50,4 +50,10 @@ public class PaginationServiceImpl implements PaginationService {
 		return response;
 	}
 
+	@Override
+	public Response addNumbers(int entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
