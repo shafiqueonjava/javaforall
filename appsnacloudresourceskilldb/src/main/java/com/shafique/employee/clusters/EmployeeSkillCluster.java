@@ -41,6 +41,12 @@ public  class EmployeeSkillCluster<EmployeeSkills> {
 	public void setClusturLevel(int clusterLevel) {
 		this.clusterLevel = clusterLevel;
 	}
+
+	@Override
+	public String toString() {
+		return "EmployeeSkillCluster [clusterLevel=" + clusterLevel + ", completionStatus=" + completionStatus
+				+ ", _clusturTopics=" + _clusturTopics + "]";
+	}
 	
 	
 		

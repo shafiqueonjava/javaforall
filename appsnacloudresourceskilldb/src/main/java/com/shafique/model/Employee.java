@@ -83,6 +83,13 @@ public class Employee {
 	public void set_emplSkillClusters(List<EmployeeSkillCluster<EmployeeSkills>> _emplClusters) {
 		this._emplSkillClusters = _emplClusters;
 	}
+
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", _empl_firstName=" + _empl_firstName + ", _empl_middleName="
+				+ _empl_middleName + ", _empl_lastName=" + _empl_lastName + ", _empl_designation=" + _empl_designation
+				+ ", _topics=" + _topics + ", _emplSkillClusters=" + _emplSkillClusters + "]";
+	}
 	
 	
 	

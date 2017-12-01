@@ -58,6 +58,12 @@ public class EmployeeController {
 		return employeeBusinessService.addTopic(empId, emplTopic);
 	}
 	
+	//update topic
+	@RequestMapping(path= {"/{empId}/topics/{topicIndex}"}, method=RequestMethod.PUT, produces=MediaType.APPLICATION_JSON_VALUE)
+	public Employee updateTopic(@PathVariable("empId") Long empId, @PathVariable("topicIndex") int topicIndex, @RequestBody EmployeeSkills emplTopic) throws Exception {
+		return employeeBusinessService.updateTopic(empId, topicIndex, emplTopic);
+	}
+	
 	
 	
 	

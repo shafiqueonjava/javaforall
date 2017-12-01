@@ -22,6 +22,8 @@ public interface EmployeeBusinessService {
 	public List<EmployeeSkills> getTopics(Long empId);
 	
 	public Employee addTopic(Long empId, EmployeeSkills emplSkill) throws Exception;
+	
+	public Employee updateTopic(Long empId, int topicIndex, EmployeeSkills emplSkill) throws Exception;
 		
 	
 	
